@@ -18,6 +18,9 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.postgresql:postgresql:42.7.2")
+    implementation ("org.flywaydb:flyway-core")
+    compileOnly ("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

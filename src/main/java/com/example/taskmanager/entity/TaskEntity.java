@@ -1,23 +1,22 @@
 package com.example.taskmanager.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import org.springframework.context.annotation.Bean;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name="tasks")
 public class TaskEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private String Title;
     private String Description;
-
-    public TaskEntity() {
-
-    }
 
     public TaskEntity(String title, String description) {
         this.Title = title;
