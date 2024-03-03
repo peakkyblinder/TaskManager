@@ -43,5 +43,9 @@ public class TaskEntity {
                 ", Description='" + Description + '\'' +
                 '}';
     }
+
+    public UUID getId() {
+        return id;
+    }
 }
 

@@ -21,6 +21,7 @@ dependencies {
     implementation("org.postgresql:postgresql:42.7.2")
     implementation ("org.flywaydb:flyway-core")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.boot:spring-boot-starter-security:3.2.3")
 }
 
 tasks.withType<Test> {
